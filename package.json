@@ -1,0 +1,34 @@
+{
+  "name": "world-rugby-api",
+  "version": "1.0.0",
+  "description": "A Koa Template using Typescript",
+  "main": "./src/index.ts",
+  "scripts": {
+    "start": "npm run build && node build/index.js",
+    "dev": "npx nodemon",
+    "build": "rimraf ./build && tsc",
+    "test": "test"
+  },
+  "keywords": [
+    "rugby",
+    "world",
+    "api"
+  ],
+  "author": "Lello De Luca",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.14.2",
+    "koa-bodyparser": "^4.4.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.8",
+    "@types/koa-bodyparser": "^4.3.10",
+    "@types/koa-logger": "^3.1.2",
+    "@types/node": "^20.4.10",
+    "dotenv": "^16.3.1",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  }
+}
